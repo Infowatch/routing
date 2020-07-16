@@ -31,6 +31,8 @@ class XmlFileLoader extends FileLoader
     use LocalizedRouteTrait;
     use PrefixTrait;
 
+    // не ошибка так как описывает схему xml
+    // appchecker CWE-798
     const NAMESPACE_URI = 'http://symfony.com/schema/routing';
     const SCHEME_PATH = '/schema/routing/routing-1.0.xsd';
 
